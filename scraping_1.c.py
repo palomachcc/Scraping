@@ -7,9 +7,6 @@ soup=BeautifulSoup(html,"html.parser")    #con BS hace "limpieza", le entregas l
 
 print(soup)
 
-#recupero todos los links
-#tags=soup("a")
-#for tag in tags:
-#    print(tag.get("href",None))
+
 
 exit=input("Presione enter para salir")
