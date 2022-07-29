@@ -8,5 +8,4 @@ soup=BeautifulSoup(html,"html.parser")    #con BS hace "limpieza", le entregas l
 print(soup)
 
 
-
 exit=input("Presione enter para salir")
