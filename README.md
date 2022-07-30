@@ -1,4 +1,7 @@
-# Scraping
+# Scraping ----> Que es y para que sirve---> https://www.youtube.com/watch?v=2XiLA_dEteQ
+
+La idea es recorrer el codigo HTML para sacar info de ahi. 
+
 Scraping Numbers from HTML using urllib and BeautifulSoup
 
 ----Modulo Request de urllib----
@@ -22,5 +25,14 @@ NOTA: hay varias formas de importar modulos de una libreria --->https://blog.clo
 
     from bs4 import BeautifulSoup
 
-TAGS
+TAGS https://www.crummy.com/software/BeautifulSoup/bs4/doc/#making-the-soup
 A Tag object corresponds to an XML or HTML tag in the original document: https://www.w3schools.com/TAgs/default.asp 
+
+One common task is extracting all the URLs found within a page’s <a> tags:
+
+    for link in soup.find_all('a'):
+        print(link.get('href'))
+        
+Another common task is extracting all the text from a page:
+
+    print(soup.get_text())
