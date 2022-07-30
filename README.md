@@ -21,3 +21,6 @@ Open the URL url, which can be either a string or a Request object. url should b
 NOTA: hay varias formas de importar modulos de una libreria --->https://blog.cloudboost.io/python-import-from-as-cheatsheet-tutorial-example-beginner-help-module-function-def-5f03b02a1dbe
 
     from bs4 import BeautifulSoup
+
+TAGS
+A Tag object corresponds to an XML or HTML tag in the original document: https://www.w3schools.com/TAgs/default.asp 
