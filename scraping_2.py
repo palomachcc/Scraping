@@ -18,8 +18,8 @@ for tag in tags:
     # Look at the parts of a tag
     #print('TAG:', tag)
     #print('URL:', tag.get('href', None))
-    #print('Contents:', tag.contents[0])   me devuelve el contenido, osea la cantidad de comentarios, para este caso que pedi --soup("span")--.
-    #print('Attrs:', tag.attrs)
+    #print('Contents:', tag.contents[0])  # me devuelve el contenido, osea la cantidad de comentarios, para este caso que pedi --soup("span")--.
+    #print('Attrs:', tag.attrs) #Attributes--> A tag may have any number of attributes. The tag <b id="boldest"> has an attribute “id” whose value is “boldest”. You can access a tag’s attributes by treating the tag like a dictionary:
     count=count + int(tag.contents[0])
     
 #print(tags) fijate que si imprimis eso, es una lista. https://www.w3schools.com/python/python_lists.asp    me devuelve todo lo que tiene "span"
