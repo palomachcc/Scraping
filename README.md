@@ -37,11 +37,33 @@ Another common task is extracting all the text from a page:
 
     print(soup.get_text())
     
-    
+
+
+DATA SERIALIZATION 
+
+Data serialization is the process of converting an object into a stream of bytes to more easily save or transmit it. Byte streams are a sequence of bytes used by programs to input and output information.Data serialization is the process of converting data objects present in complex data structures into a byte stream for storage, transfer and distribution purposes on physical devices.
+
+Computer systems may vary in their hardware architecture, OS, addressing mechanisms. Internal binary representations of data also vary accordingly in every environment. Storing and exchanging data between such varying environments requires a platform-and-language-neutral data format that all systems understand.
+
 -----parse XML (eXtensible Markup Language) data-----
+
 https://www.py4e.com/html3/13-web
 https://docs.python.org/3/library/xml.etree.elementtree.html
     Basicamente, es arboles, listas de arboles e indagar por las ramas de los arboles
 Using an XML parser such as ElementTree has the advantage that while the XML in this example is quite simple, it turns out there are many rules regarding valid XML, and using ElementTree allows us to extract data from XML without worrying about the rules of XML syntax.
 Calling fromstring converts the string representation of the XML into a “tree” of XML elements. When the XML is in a tree, we have a series of methods we can call to extract portions of data from the XML string. The find function searches through the XML tree and retrieves the element that matches the specified tag.
     
+    
+    
+IMPORTACION de librerias
+
+La forma en que llamas a una funcion depende de como importaste. Si no esta bien, no corre el codigo.
+
+from urllib.request import urlopen ---> html = urlopen(url, context=ctx).read() (aca no usa decode porque despues usa el parser de BS)
+import urllib.request ---> html= urllib.request.urlopen(page).read().decode()
+
+
+
+----Parsing JavaScript Object Notation (JSON)----
+
+
