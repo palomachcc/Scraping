@@ -7,8 +7,18 @@ for nearly all data exchange between applications because of its relative simpli
 https://devopedia.org/data-serialization#:~:text=XML%20%2C%20JSON%20%2C%20BSON%2C%20YAML,commonly%20used%20data%20serialization%20formats.
 
 
+Parsing JSON
+We construct our JSON by nesting dictionaries and lists as needed. In this example, we represent a list of users where each user is a set of key-value pairs (i.e., a 
+dictionary). So we have a list of dictionaries. In the program jason_1.py , we use the built-in json library to parse the JSON and read through the data. 
+Compare this closely to the equivalent XML data and code above. The JSON has less detail, so we must know in advance that we are getting a list and that the list is of 
+users and each user is a set of key-value pairs. The JSON is more succinct (an advantage) but also is less self-describing (a disadvantage).
 
-Comunmnete usado con las APIs. ¿Qué es una API?
+json.loads() me devuelve a Python list which we traverse with a for loop, and each item within that list is a Python dictionary. Once the JSON has been parsed, we can
+use the Python index operator to extract the various bits of data for each user. We don’t have to use the JSON library to dig through the parsed JSON, since the returned
+data is simply native Python structures.
+
+----------------------------------------------------
+JSON comunmnete usado con las APIs. ¿Qué es una API?
 Las API  “interfaz de programación de aplicaciones” son mecanismos que permiten a dos componentes de software comunicarse entre sí mediante un conjunto de definiciones y
 protocolos.La interfaz puede considerarse como un contrato de servicio entre dos aplicaciones. Este contrato define cómo se comunican entre sí mediante solicitudes y
 respuestas. La documentación de su API contiene información sobre cómo los desarrolladores deben estructurar esas solicitudes y respuestas.La arquitectura de las API 
@@ -16,13 +26,11 @@ suele explicarse en términos de cliente y servidor. La aplicación que envía l
 
 Por ejemplo, el sistema de software del instituto de meteorología contiene datos meteorológicos diarios. La aplicación meteorológica de su teléfono “habla” con este
 sistema a través de las API y le muestra las actualizaciones meteorológicas diarias en su teléfono. la base de datos meteorológicos del instituto es el servidor y la 
-aplicación móvil es el cliente. 
+aplicación móvil es el cliente.
 
-
-
-Parsing JSON
-We construct our JSON by nesting dictionaries and lists as needed. In this example, we represent a list of users where each user is a set of key-value pairs (i.e., a 
-dictionary). So we have a list of dictionaries. In the program jason_1.py , we use the built-in json library to parse the JSON and read through the data. 
-Compare this closely to the equivalent XML data and code above. The JSON has less detail, so we must know in advance that we are getting a list and that the list is of 
-users and each user is a set of key-value pairs. The JSON is more succinct (an advantage) but also is less self-describing (a disadvantage).
-
+When we begin to build our programs where the functionality of our program includes access to services provided by other programs, we call the approach a
+Service-oriented architecture (SOA).We see many examples of SOA when we use the web. We can go to a single web site and book air travel, hotels, and automobiles all from 
+a single site. The data for hotels is not stored on the airline computers. Instead, the airline computers contact the services on the hotel computers and retrieve the
+hotel data and present it to the user. When the user agrees to make a hotel reservation using the airline site, the airline site uses another web service on the hotel
+systems to actually make the reservation. And when it comes time to charge your credit card for the whole transaction, still other computers become involved in the
+process.
