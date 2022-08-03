@@ -34,3 +34,5 @@ a single site. The data for hotels is not stored on the airline computers. Inste
 hotel data and present it to the user. When the user agrees to make a hotel reservation using the airline site, the airline site uses another web service on the hotel
 systems to actually make the reservation. And when it comes time to charge your credit card for the whole transaction, still other computers become involved in the
 process.
+
+para el codigo ----> https://docs.python.org/3/library/json.html
