@@ -22,7 +22,7 @@ aplicación móvil es el cliente.
 
 Parsing JSON
 We construct our JSON by nesting dictionaries and lists as needed. In this example, we represent a list of users where each user is a set of key-value pairs (i.e., a 
-dictionary). So we have a list of dictionaries. In the following program, we use the built-in json library to parse the JSON and read through the data. 
+dictionary). So we have a list of dictionaries. In the program jason_1.py , we use the built-in json library to parse the JSON and read through the data. 
 Compare this closely to the equivalent XML data and code above. The JSON has less detail, so we must know in advance that we are getting a list and that the list is of 
 users and each user is a set of key-value pairs. The JSON is more succinct (an advantage) but also is less self-describing (a disadvantage).
 
