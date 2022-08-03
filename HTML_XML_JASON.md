@@ -64,6 +64,4 @@ import urllib.request ---> html= urllib.request.urlopen(page).read().decode()
 
 
 
-----Parsing JavaScript Object Notation (JSON)----
-
 
