@@ -2,7 +2,8 @@
 
 https://www.json.org/json-es.html 
 es un formato de representacion de datos, mas simple que XML. Recordemos que eran formatos de serializacion: Data serialization is the process of converting data objects
-present in complex data structures into a byte stream for storage, transfer and distribution purposes on physical devices. 
+present in complex data structures into a byte stream for storage, transfer and distribution purposes on physical devices. JSON is quickly becoming the format of choice 
+for nearly all data exchange between applications because of its relative simplicity compared to XML.
 https://devopedia.org/data-serialization#:~:text=XML%20%2C%20JSON%20%2C%20BSON%2C%20YAML,commonly%20used%20data%20serialization%20formats.
 
 
@@ -16,3 +17,5 @@ suele explicarse en términos de cliente y servidor. La aplicación que envía l
 Por ejemplo, el sistema de software del instituto de meteorología contiene datos meteorológicos diarios. La aplicación meteorológica de su teléfono “habla” con este
 sistema a través de las API y le muestra las actualizaciones meteorológicas diarias en su teléfono. la base de datos meteorológicos del instituto es el servidor y la 
 aplicación móvil es el cliente. 
+
+
