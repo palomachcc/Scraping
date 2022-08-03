@@ -1,4 +1,5 @@
-import xml.etree.ElementTree as ET
+print("You will notice some differences. First, in XML, we can add attributes like “intl” to the “phone” tag. In JSON, we simply have key-value pairs. Also the XML “person” tag is gone, replaced by a set of outer curly braces.")
+
 
 data_xml = '''
 <person>
