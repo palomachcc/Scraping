@@ -36,3 +36,35 @@ systems to actually make the reservation. And when it comes time to charge your 
 process.
 
 para el codigo ----> https://docs.python.org/3/library/json.html
+
+
+
+RECORDATORIO.
+Diccionarios de python:
+
+------------------------------------------------
+ thisdict =	{
+   "brand": "Ford",
+   "model": "Mustang",
+   "year": 1964
+ }
+ print(thisdict) 
+ ----------------------------------------------
+ 
+ este codigo me devuelve: 
+ 
+ -----------------------------------------------------------
+ {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+ ------------------------------------------------
+
+a esto le llama "key-value pairs".
+
+Para imprimir items de diccionarios, en python, pongo diccionario["nombre de lo que quiero"] . Por ejemplo:
+Print the "brand" value of the dictionary:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict["brand"]) ------->Ford
