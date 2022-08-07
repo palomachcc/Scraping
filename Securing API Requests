@@ -1,0 +1,2 @@
+The data provided by these APIs is usually valuable.The owners of de data might limit the number of requests per day, demand an API "key, or even charge for usage.
+tambien pueden cambiar las reglas a medida que las cosas progresan... Por ejemplo la API de geocoding tiene un limite de 2500 requests por dia.
