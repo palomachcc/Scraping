@@ -1,4 +1,8 @@
-# Scraping
-https://www.py4e.com/html3/ libro python
+ 
+# Scraping ![Badge en Desarollo](https://img.shields.io/badge/STATUS-COMPLETO-green)
 
-https://www.py4e.com/code3/ 
+##  :tropical_fish:Using Python to Access Web Data
+
+- `Ideas basicas para empezar`
+
+https://www.py4e.com/html3/ 
