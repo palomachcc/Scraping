@@ -3,6 +3,6 @@
 
 ##  :tropical_fish:Using Python to Access Web Data
 
-- `Ideas basicas para empezar`
+Notas basicas para empezar
 
 [Biblio](https://www.py4e.com/html3/)
